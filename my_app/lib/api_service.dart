@@ -1,10 +1,9 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:logger/logger.dart';
+import 'config.dart';
 
 class ApiService {
-  static const String _apiKey = 'AIzaSyDU4MygbTNQJs_R6HBBBKpCxTH_jOlYJMY';
-
   // Using the standard 1.5 Flash model
   static const String _baseUrl =
       'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
@@ -13,7 +12,7 @@ class ApiService {
 
   Future<String> sendMessage(String message) async {
     try {
-      final url = Uri.parse('$_baseUrl?key=$_apiKey');
+      final url = Uri.parse('$_baseUrl?key=${Config.geminiApiKey}');
 
       final requestBody = {
         "contents": [
