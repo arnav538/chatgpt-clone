@@ -1,4 +1,5 @@
-Flutter GPT UI Clone (Gemini Integrated)
+  **Chat GPT Clone Application**
+
 
 A Frontend UI implementation of the ChatGPT interface built with Flutter.
 
@@ -6,7 +7,7 @@ This project focuses on replicating the look and feel of the ChatGPT mobile expe
 
 Note: This is a UI-centric project. It does not include a custom backend, database, or user authentication system. Chat history is stored locally in the app's memory during the session.
 
-📱 Features
+**📱 Features**
 
 Real-time AI Chat: Connects directly to Google's Gemini API (gemini-1.5-flash or gemini-pro) to generate actual responses.
 
@@ -20,7 +21,7 @@ Quick Action Buttons: UI demonstrations for common prompts (e.g., "Summarize tex
 
 
 
-🛠️ Tech Stack
+**🛠️ Tech Stack**
 
 Frontend: Flutter (Dart)
 
@@ -32,9 +33,7 @@ Packages:
 
 http: For API communication.
 
-🚀 Getting Started
-
-Prerequisites
+**🚀 Prerequisites**
 
 Flutter SDK installed.
 
@@ -42,7 +41,7 @@ A code editor (VS Code or Android Studio).
 
 A Google Cloud API Key.
 
-🧩 Scope & Limitations
+**🧩 Scope & Limitations**
 
 No Persistent Database: Chats are lost when you close the app (unless you implement local storage or Firebase).
 
